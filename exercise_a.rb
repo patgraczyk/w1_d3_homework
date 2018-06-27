@@ -18,7 +18,7 @@ p stops.length
 # How many ways can we return "Falkirk High" from the array?
 p stops(2)
 p stops(-4)
-#You can write a loop and return value of Falkirk Hihg 
+#You can write a loop and return value of Falkirk High 
 # Reverse the positions of the stops in the array
 p stops.reverse
 # Print out all the stops using a for loop
