@@ -69,18 +69,23 @@ p users ["Avril"][:pets][0][:species]
 p  users ["Erik"][:lottery_numbers][2]
 
 # Return an array of Avril's lottery numbers that are even
+p users ["Avril"][:lottery_numbers] #come back
 
 # Erik is one lottery number short! Add the number 7 to be included in his lottery numbers
+
+p users ["Erik"][:lottery_numbers].push(7)
 
 # Change Erik's hometown to Edinburgh
 p users ["Erik"][:home_town]="Edinburgh"
 
 # Add a pet dog to Erik called "Fluffy"
-# p users["Erik"][:pets][0] << {
-#   :name => "fluffy",
-#   :species => "duck"
-# }
+
+p users ["Erik"][:pets]<< {
+  :name => "Fluffy",
+  :species => "moose"
+}
 
 # Add another person to the users hash
-p users << "Alex"{
-  }
+
+p users["Mary"] = "new_user"
+p users
