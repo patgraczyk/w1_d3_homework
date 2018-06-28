@@ -69,7 +69,19 @@ p users ["Avril"][:pets][0][:species]
 p  users ["Erik"][:lottery_numbers][2]
 
 # Return an array of Avril's lottery numbers that are even
-p users ["Avril"][:lottery_numbers] #come back
+p users ["Avril"][:lottery_numbers][0][1][3] #come back
+
+# nums = users ["Avril"][:lottery_numbers]
+#
+# number_even = ["Avril"][:lottery_numbers]
+#   if number_even /2 == 0
+#     p number
+#   end
+
+nums = users["Avril"][:lottery_numbers]
+  if nums /2 == 0
+    p nums
+end
 
 # Erik is one lottery number short! Add the number 7 to be included in his lottery numbers
 
